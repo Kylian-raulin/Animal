@@ -1,22 +1,22 @@
-﻿namespace Animal.Models
-{ 
-    abstract class Animal
+﻿namespace Animal.Models.Animals
+{
+    abstract public class Animal
     {
-        public string Name;
+        public string Name { get; set; }
 
-        public void Move()
+        public virtual void Move()
         {
             Console.WriteLine($"{Name} il a bougé");
         }
 
-        public void Sleep()
+        public virtual void Sleep()
         {
             Console.WriteLine($"{Name} il dort");
         }
 
         public Animal()
         {
-            this.Name = "baguera";
+            Name = "baguera";
         }
 
         public Animal(string name)

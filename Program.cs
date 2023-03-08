@@ -1,17 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Animal.Models.Animals;
 using A = Animal.Models;
 
 class Program
 {
     static void Main(string[] args)
     {
-        A.Animal cat = new A.Animal();
-        A.Animal dog = new A.Animal("toto");
+        Griffin myAnimal1 = new Griffin();
+        
+        myAnimal1.Sleep();
+        myAnimal1.Move();
+        Console.WriteLine(myAnimal1.griffinName);
+      
+        Dragon myAnimal2 = new Dragon();
+        myAnimal2.Move();
+        myAnimal2.Sleep();
 
-        cat.Move();
-        dog.Sleep();
-
-        Console.WriteLine();
+        Console.WriteLine(myAnimal2.dragonName);
         Console.ReadLine();
     }
 }
