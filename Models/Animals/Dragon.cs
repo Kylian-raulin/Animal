@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Animal.Services;
 
 namespace Animal.Models.Animals
 {
-    class Dragon : Animal
+    class Dragon : Animal, ISteering
     {
         public Dragon()
         {
@@ -14,7 +15,7 @@ namespace Animal.Models.Animals
         }
         public string dragonName { get; private set; }
 
-        public override void Move()
+        public void Moove()
         {
             Console.WriteLine($"{dragonName} move");
         }

@@ -16,9 +16,9 @@ namespace Animal.Models.Animals
         }
         public string griffinName { get; private set; }
 
-        public override void Move()
+        public override void Moove()
         {
-            Console.WriteLine($"{griffinName} move");
+            Console.WriteLine($"{griffinName} moove");
         }
 
         public new void Sleep()

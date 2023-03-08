@@ -4,7 +4,7 @@
     {
         public string Name { get; set; }
 
-        public virtual void Move()
+        public virtual void Moove()
         {
             Console.WriteLine($"{Name} il a bougé");
         }
