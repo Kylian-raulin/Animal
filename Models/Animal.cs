@@ -1,6 +1,6 @@
 ﻿namespace Animal.Models
 { 
-    public class Animal
+    abstract class Animal
     {
         public string Name;
 
