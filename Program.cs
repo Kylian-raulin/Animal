@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Xml;
 using Animal.Models.Animals;
 using Animal.Models.Vehicle;
 using A = Animal.Models;
