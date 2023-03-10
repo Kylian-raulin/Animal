@@ -2,26 +2,35 @@
 {
     abstract public class Animal
     {
-        public string Name { get; set; }
-
+        public string name { get; set; }
+        public string Type { get; set; }
+        public int Id { get; set; }
+        public int age { get; set; }
+      
         public virtual void Moove()
         {
-            Console.WriteLine($"{Name} il a bougé");
+            Console.WriteLine($"{name} il a bougé");
         }
 
         public virtual void Sleep()
         {
-            Console.WriteLine($"{Name} il dort");
+            Console.WriteLine($"{name} il dort");
         }
 
         public Animal()
         {
-            Name = "baguera";
+            this.name = "baguera";
+            this.Type = "commun";
+            this.Id = 1;
+            this.age = 12;
         }
 
-        public Animal(string name)
+        public Animal(string name, string type, int id, int age)
         {
-            this.Name = name;
+            this.name = name;
+            this.Type = type;
+            this.Id = id;
+            this.age = age;
         }
 
     }

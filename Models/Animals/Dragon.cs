@@ -11,18 +11,24 @@ namespace Animal.Models.Animals
     {
         public Dragon()
         {
-            dragonName = "Dragon";
+            name = "Dragon";
         }
-        public string dragonName { get; private set; }
 
+        public Dragon(string name, string type, int ID, int age)
+        {
+            this.name = name;
+            this.Type = type;
+            this.Id = ID;
+            this.age = age;
+        }
         public void Moove()
         {
-            Console.WriteLine($"{dragonName} move");
+            Console.WriteLine($"{name} move");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine($"{dragonName} sleep");
+            Console.WriteLine($"{name} sleep");
         }
     }
 }

@@ -8,11 +8,12 @@ namespace Animal.Models.Animals
 {
     class Dog : Animal
     {
-        public string dogName { get; private set; }
-
-        public Dog(string name)
+        public Dog(string name, string type, int ID, int age)
         {
-            this.dogName = name;
+            this.name = name;
+            this.Type = type;
+            this.Id = ID;
+            this.age = age;
         }
     }
 }
